@@ -97,13 +97,13 @@ main {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  filter: grayscale(100%) contrast(1.05);
+  
   border: 1px solid var(--line);
   transition: filter .35s ease, transform .35s ease;
 }
 
 .project-card:hover .project-image {
-  filter: grayscale(100%) contrast(1.2);
+ 
   transform: scale(.985);
 }
 
@@ -225,14 +225,14 @@ main {
   height: 100%;
   min-height: 220px;
   object-fit: cover;
-  filter: grayscale(100%);
+
   cursor: zoom-in;
   transition: transform .45s ease, filter .45s ease;
 }
 
 .collage-item:hover img {
   transform: scale(1.025);
-  filter: grayscale(80%);
+
 }
 
 .collage-item figcaption {
@@ -332,7 +332,7 @@ main {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  filter: grayscale(100%);
+ 
 }
 
 .lightbox-count {

@@ -6,11 +6,18 @@ const projects = [
     year: "2026",
     image: "images/robotic-arm.svg",
     description: "Project001 came about from the idea of visualizing and expressing our innermost feelings and thoughts through a different medium. Natural language (english specially) often fails to convey the complex emotions. There’s ambiguity, tones, mood. On the other half is the person whom interprets, adding another dimension. Project001 hopes to create that bridge and challenge what it means to express.",
-    shortessary: "asf",
-    role: "Mechanical design / prototyping / controls",
-    tools: "CAD / machining / embedded systems",
-    images: ["images/robotic-arm.svg", "images/robotic-arm-detail.svg", "images/robotic-arm-cad.svg"],
-    youtube: "" // Paste the YouTube video URL or video ID here
+    shortessary: "",
+    role: "",
+    tools: "",
+    images: [   "images/p001/p001_13.png", "images/p001/p001_19.png", "images/p001/p001_15.png", "images/p001/p001_20.png", 
+                "images/p001/p001_11.png", "images/p001/p001_28.png", "images/p001/p001_9.png", "images/p001/p001_10.png",
+                "images/p001/p001_26.png", "images/p001/p001_18.png", "images/p001/p001_2.png", "images/p001/p001_6.png",
+
+          
+                "images/p001/p001_3.png", "images/p001/p001_16.png", "images/p001/p001_1.png", " images/p001/p001_4.png", 
+                "images/p001/p001_17.png",  "images/p001/p001_5.png" 
+            ],
+    youtube: ""
   }
 ];
 
@@ -126,7 +133,7 @@ function projectPage(id) {
       <section class="copy-block">
         <div>
           <div class="eyebrow">PROJECT NOTES</div>
-          <h2>DESIGN / DEVELOPMENT / FABRICATION</h2>
+          <h2>DESIGN / DEVELOPMENT / SHOWCASE</h2>
         </div>
         <div>
           <p>${p.shortessary}</p>
@@ -157,8 +164,10 @@ I'm Chris and I like to build things. Some things are small, some are big. I use
         <div class="contact-copy">
           <p>For collaborations, engineering work, OR just to talk about making things, get in touch.</p>
           <div class="contact-specs">
+            <span><a href="youtube.com/@cp_partiallytrue"> Youtube </span>
+
             <div class="spec"><span>EMAIL</span><span> 001medialabs@gmail.com</span></div>
-            <span><a href="patreon.com/PartlyTrue_"> Patreon </span>
+            <span><a href="patreon.com/PartiallyTrue_"> Patreon </span>
   
           </div>
         </div>
