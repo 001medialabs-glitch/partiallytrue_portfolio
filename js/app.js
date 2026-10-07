@@ -1,75 +1,16 @@
 const projects = [
   {
-    id: "robotic-arm",
-    title: "ROBOTIC ARM",
+    id: "project001",
+    title: "Project001",
     type: "ENGINEERING",
     year: "2026",
     image: "images/robotic-arm.svg",
-    description: "A six-axis robotic arm developed as a modular platform for precision manipulation and research. The work covered mechanical design, prototyping, actuator integration and control.",
+    description: "Project001 came about from the idea of visualizing and expressing our innermost feelings and thoughts through a different medium. Natural language (english specially) often fails to convey the complex emotions. There’s ambiguity, tones, mood. On the other half is the person whom interprets, adding another dimension. Project001 hopes to create that bridge and challenge what it means to express.",
+    shortessary: "asf",
     role: "Mechanical design / prototyping / controls",
     tools: "CAD / machining / embedded systems",
     images: ["images/robotic-arm.svg", "images/robotic-arm-detail.svg", "images/robotic-arm-cad.svg"],
     youtube: "" // Paste the YouTube video URL or video ID here
-  },
-  {
-    id: "terrain-rover",
-    title: "TERRAIN ROVER",
-    type: "FABRICATION",
-    year: "2025",
-    image: "images/terrain-rover.svg",
-    description: "A compact off-road rover built around a modular chassis. The project combined mechanical fabrication, electronics integration and software for field testing.",
-    role: "Design / fabrication / integration",
-    tools: "CAD / CNC / electronics",
-    images: ["images/terrain-rover.svg", "images/terrain-rover-detail.svg", "images/terrain-rover-cad.svg"],
-    youtube: ""
-  },
-  {
-    id: "heat-exchanger",
-    title: "HEAT EXCHANGER",
-    type: "ENGINEERING",
-    year: "2024",
-    image: "images/heat-exchanger.svg",
-    description: "A compact thermal system exploring high-efficiency heat transfer in constrained environments, balancing manufacturability with performance.",
-    role: "Thermal design / testing",
-    tools: "CAD / simulation / fabrication",
-    images: ["images/heat-exchanger.svg", "images/heat-exchanger-detail.svg"],
-    youtube: ""
-  },
-  {
-    id: "bracket-system",
-    title: "BRACKET SYSTEM",
-    type: "DESIGN",
-    year: "2024",
-    image: "images/bracket-system.svg",
-    description: "A lightweight structural bracket system designed for rapid manufacture and repeatable assembly.",
-    role: "Mechanical design",
-    tools: "CAD / FEA / manufacturing",
-    images: ["images/bracket-system.svg", "images/bracket-system-cad.svg"],
-    youtube: ""
-  },
-  {
-    id: "laser-cutter",
-    title: "LASER CUTTER",
-    type: "FABRICATION",
-    year: "2023",
-    image: "images/laser-cutter.svg",
-    description: "A fabrication workflow focused on precision cutting, fixture design and repeatable part production.",
-    role: "Fabrication / process development",
-    tools: "CAM / CNC / fixtures",
-    images: ["images/laser-cutter.svg"],
-    youtube: ""
-  },
-  {
-    id: "vertical-turbine",
-    title: "VERTICAL AXIS TURBINE",
-    type: "RESEARCH",
-    year: "2023",
-    image: "images/vertical-turbine.svg",
-    description: "An experimental vertical-axis turbine exploring compact energy generation and mechanical efficiency.",
-    role: "Concept / prototype / testing",
-    tools: "CAD / prototyping / testing",
-    images: ["images/vertical-turbine.svg", "images/vertical-turbine-detail.svg"],
-    youtube: ""
   }
 ];
 
@@ -94,17 +35,17 @@ function home() {
   app.innerHTML = `
     <section class="home-intro">
       <div class="profile-photo-wrap profile-photo-wrap--home">
-        <img class="profile-photo" src="images/terrain-rover.svg" alt="Profile photo" onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
+        <img class="profile-photo" src="images/profile.png" alt="Profile photo" onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
         <div class="profile-photo-placeholder" hidden>ADD PROFILE PHOTO</div>
       </div>
       <div class="home-intro-copy">
-        <div class="eyebrow">ENGINEERING / FABRICATION / EXPERIMENTS</div>
-        <h1>ENGINEER / MAKER</h1>
-        <p>Physical systems, machines and prototypes — from first sketch to working hardware.</p>
+        <div class="eyebrow">Engineering / Art </div>
+        <h1>Christopher Perez</h1>
+        <p>Bringing the world closer.</p>
       </div>
     </section>
     <section class="section-label">
-      <span>SELECTED PROJECTS</span>
+      <span>PROJECTS</span>
       <span>01 — ${String(projects.length).padStart(2,"0")}</span>
     </section>
     <section class="project-grid">
@@ -146,9 +87,7 @@ function projectPage(id) {
         <div class="project-description">
           <p>${p.description}</p>
           <div class="specs">
-            <div class="spec"><span>ROLE</span><span>${p.role}</span></div>
-            <div class="spec"><span>TOOLS</span><span>${p.tools}</span></div>
-            <div class="spec"><span>IMAGES</span><span>${p.images.length} / ADD AS MANY AS NEEDED</span></div>
+             <div class="spec"><span><a href="https://001medialabs-glitch.github.io/project001/" target="_blank" >DOCUMENTATION LINK</a></span></div>
           </div>
         </div>
       </section>
@@ -190,7 +129,7 @@ function projectPage(id) {
           <h2>DESIGN / DEVELOPMENT / FABRICATION</h2>
         </div>
         <div>
-          <p>${p.description}</p>
+          <p>${p.shortessary}</p>
         </div>
       </section>
       <a class="back" href="#/">← BACK TO PROJECTS</a>
@@ -204,19 +143,23 @@ function simplePage(type) {
       <div class="eyebrow">${isAbout ? "ABOUT" : "CONTACT"}</div>
       ${isAbout ? `
         <div class="profile-photo-wrap profile-photo-wrap--about">
-          <img class="profile-photo" src="images/profile.jpg" alt="Profile photo" onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
+          <img class="profile-photo" src="images/profile.png" alt="Profile photo" onerror="this.hidden=true; this.nextElementSibling.hidden=false;">
           <div class="profile-photo-placeholder" hidden>ADD PROFILE PHOTO</div>
         </div>
         <h1>ENGINEER / MAKER</h1>
         <div class="about-copy">
-          <p>I work across engineering, fabrication and experimental hardware. I enjoy turning rough ideas into physical systems through design, prototyping and testing.</p>
+          <p> 
+
+I'm Chris and I like to build things. Some things are small, some are big. I use technology to create things that touch the edges of reality. All projects are open source.
+</p>
         </div>
       ` : `
         <div class="contact-copy">
-          <p>For collaborations, engineering work, fabrication projects or just to talk about making things, get in touch.</p>
+          <p>For collaborations, engineering work, OR just to talk about making things, get in touch.</p>
           <div class="contact-specs">
-            <div class="spec"><span>EMAIL</span><span>hello@example.com</span></div>
-            <div class="spec"><span>LOCATION</span><span>GERMANY</span></div>
+            <div class="spec"><span>EMAIL</span><span> 001medialabs@gmail.com</span></div>
+            <span><a href="patreon.com/PartlyTrue_"> Patreon </span>
+  
           </div>
         </div>
       `}
