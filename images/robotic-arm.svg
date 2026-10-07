@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+<rect width="1200" height="900" fill="#090909"/>
+<g stroke="#777" fill="none" opacity=".75">
+<rect x="70" y="70" width="1060" height="760"/>
+<path d="M150 680 L330 430 L500 600 L690 270 L1010 650" stroke-width="5"/>
+<circle cx="330" cy="430" r="48"/><circle cx="500" cy="600" r="32"/><circle cx="690" cy="270" r="55"/>
+<path d="M160 720 H1040 M180 180 H1020" opacity=".35"/>
+</g>
+<g fill="#ddd" font-family="monospace">
+<text x="95" y="115" font-size="22" letter-spacing="3">ENGINEERING</text>
+<text x="95" y="780" font-size="34" letter-spacing="2">ROBOTIC ARM</text>
+<text x="95" y="815" font-size="18" fill="#888">MACHINE / ASSEMBLY</text>
+</g>
+<g fill="#888" opacity=".5" font-family="monospace" font-size="14">
+<text x="920" y="120">00 / 06</text><text x="920" y="145">TECHNICAL ARCHIVE</text>
+</g>
+</svg>
